@@ -7,6 +7,16 @@ const config: Config = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
+        container: {
+            center: true,
+            padding: {
+                DEFAULT: '3rem',
+                sm: '2rem',
+                lg: '4rem',
+                xl: '5rem',
+                '2xl': '7rem',
+            },
+        },
         extend: {
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -15,25 +25,28 @@ const config: Config = {
             },
         },
     },
-    plugins: [require("daisyui")],
+    plugins: [
+        // require('@tailwindcss/forms'),
+        require("daisyui")
+    ],
     // daisyUI config (optional - here are the default values)
     daisyui: {
         themes: [
             "light",
             "dark",
-            {
-                mytheme: {
-                    "primary": "#db2777",
-                    "secondary": "#f472b6",
-                    "accent": "#d8b4fe",
-                    "neutral": "#292d28",
-                    "base-100": "#282621",
-                    "info": "#06b6d4",
-                    "success": "#00bf4d",
-                    "warning": "#fcd34d",
-                    "error": "#ef4444",
-                },
-            },
+            // {
+            //     mytheme: {
+            //         "primary": "#db2777",
+            //         "secondary": "#f472b6",
+            //         "accent": "#d8b4fe",
+            //         "neutral": "#292d28",
+            //         "base-100": "#282621",
+            //         "info": "#06b6d4",
+            //         "success": "#00bf4d",
+            //         "warning": "#fcd34d",
+            //         "error": "#ef4444",
+            //     },
+            // },\
         ], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
         darkTheme: "dark", // name of one of the included themes for dark mode
         base: true, // applies background color and foreground color for root element by default

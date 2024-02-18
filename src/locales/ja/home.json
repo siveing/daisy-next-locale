@@ -1,5 +1,10 @@
 {
-    "header": "My Internationalized JAPAN",
-    "greeting": "Have a great day!",
-    "page2": "Go to Page 2"
+    "header": "私の国際化した日本",
+    "greeting": "良い一日を!",
+    "page2": "Go to Page 2",
+    "navigation": {
+        "home": "ホーム",
+        "about": "会社概要",
+        "dashboard": "ダッシュボード"
+    }
 }

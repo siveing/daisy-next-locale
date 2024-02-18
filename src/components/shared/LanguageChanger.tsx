@@ -37,7 +37,7 @@ export default function LanguageChanger() {
     };
 
     return (
-        <select onChange={handleChange} value={currentLocale}>
+        <select onChange={handleChange} value={currentLocale || 'en'} className="select select-bordered select-sm w-full max-w-xs">
             <option value="en">English</option>
             <option value="km">Khmer</option>
             <option value="ja">日本語</option>

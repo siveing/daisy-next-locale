@@ -1,5 +1,10 @@
 {
-    "header": "My Internationalized KHMER",
-    "greeting": "Have a great day!",
-    "page2": "Go to Page 2"
-  }
+    "header": "អន្តរជាតិរបស់ខ្ញុំ",
+    "greeting": "សូម​ឱ្យ​មាន​ថ្ងៃ​ល្អ!",
+    "page2": "Go to Page 2",
+    "navigation": {
+        "home": "ទំព័រដើម",
+        "about": "អំពី​ពួក​យើង",
+        "dashboard": "ផ្ទាំងគ្រប់គ្រង"
+    }
+}
